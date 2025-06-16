@@ -34,7 +34,7 @@ const artists = [
     genre: 'R&B / Soul',
     image: '/images/fatmapolat.jpg',
     description: 'Duygusal vokalleriyle tanınan R&B ve soul sanatçısı.',
-    spotifyUrl: 'https://open.spotify.com/artist/3WrFJ7ztbogyGnTHbHJFl2',
+    spotifyUrl: 'https://open.spotify.com/artist/7J15rRmjDXGyv3ip6CdmeM',
   },
   {
     id: 5,
@@ -50,7 +50,7 @@ const artists = [
     genre: 'Jazz',
     image: '/images/atillakaya.jpg',
     description: 'Caz vokali ve besteci. Modern caz tınılarıyla dikkat çekiyor.',
-    spotifyUrl: 'https://open.spotify.com/artist/5YGY8feqx7naU7z4HrwZM6',
+    spotifyUrl: 'https://open.spotify.com/artist/55dxJQtMgnMst1oFt98djw',
   },
   // Add more artists as needed
 ]
