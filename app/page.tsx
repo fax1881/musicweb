@@ -54,7 +54,7 @@ const artists = [
       en: 'R&B and soul artist known for emotional vocals.'
     },
     image: '/images/fatmapolat.jpg',
-    spotifyUrl: 'https://open.spotify.com/artist/3WrFJ7ztbogyGnTHbHJFl2',
+    spotifyUrl: 'https://open.spotify.com/artist/7J15rRmjDXGyv3ip6CdmeM',
   },
   {
     id: 5,
@@ -76,7 +76,7 @@ const artists = [
       en: 'Jazz vocalist and composer. Notable for modern jazz tones.'
     },
     image: '/images/atillakaya.jpg',
-    spotifyUrl: 'https://open.spotify.com/artist/5YGY8feqx7naU7z4HrwZM6',
+    spotifyUrl: 'https://open.spotify.com/artist/55dxJQtMgnMst1oFt98djw',
   },
 ]
 
