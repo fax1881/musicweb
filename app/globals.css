@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: 'Inter', sans-serif;
+    --font-montserrat: 'Montserrat', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-secondary text-white;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-secondary;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary/50 rounded-full hover:bg-primary/70 transition-colors;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg bg-primary text-secondary font-medium transition-all duration-200 hover:bg-primary-hover hover:shadow-yellow focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-secondary;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg border-2 border-primary text-primary font-medium transition-all duration-200 hover:bg-primary hover:text-secondary hover:shadow-yellow focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-secondary;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-display font-bold text-gradient mb-8;
+  }
+
+  .card {
+    @apply bg-secondary-light rounded-xl overflow-hidden shadow-lg transition-all duration-200 hover:shadow-yellow;
+  }
+
+  .gradient-overlay {
+    @apply absolute inset-0 bg-gradient-to-b from-secondary/80 to-secondary;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-light;
+  }
+
+  .border-gradient {
+    @apply border-2 border-transparent bg-gradient-to-r from-primary to-primary-light bg-clip-border;
+  }
+
+  .hover-glow {
+    @apply transition-all duration-200 hover:shadow-yellow;
+  }
+
+  .section-bg {
+    @apply relative before:absolute before:inset-0 before:bg-gradient-to-b before:from-secondary/50 before:to-secondary before:backdrop-blur-sm;
+  }
+
+  .nav-link {
+    @apply text-white hover:text-primary transition-colors duration-300
+           relative after:absolute after:bottom-0 after:left-0 after:w-0 
+           after:h-0.5 after:bg-primary after:transition-all hover:after:w-full;
+  }
+} 
