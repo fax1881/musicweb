@@ -14,7 +14,7 @@ const releases = [
   },
   {
     id: 2,
-    title: 'Arabest',
+    title: 'Arabesk',
     artist: 'Hakan Güray',
     cover: '/images/hakangüray.jpg',
     spotifyUrl: 'https://open.spotify.com/embed/artist/2B2mBRXPcC5ONhdhOrJ0zX',

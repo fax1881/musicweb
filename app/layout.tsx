@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   title: '7EDİ Music Entertainment',
   description: 'Yeni nesil müzik platformu',
   icons: {
-    icon: '/favicon.ico',
+    icon: '/images/logo.svg',
   },
 }
 

@@ -103,8 +103,8 @@ const releases = [
     releaseDate: '2024',
     genre: { tr: 'Arabesk', en: 'Arabesk' },
     description: {
-      tr: 'Endüstriyel ve arabest tarzında yeni albüm.',
-      en: 'New album in industrial and arabest style.'
+      tr: 'Endüstriyel ve arabesk tarzında yeni albüm.',
+      en: 'New album in industrial and arabesk style.'
     }
   },
 
