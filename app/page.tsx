@@ -79,13 +79,15 @@ const artists = [
     image: '/images/atillakaya.jpg',
     spotifyUrl: 'https://open.spotify.com/artist/55dxJQtMgnMst1oFt98djw',
   },
-
   {
-    id: 6,
+    id: 7,
     name: 'Sei',
-    genre: 'Rap',
+    genre: { tr: 'Rap', en: 'Rap' },
     image: '/images/sei.jpg',
-    description: 'Rap ve besteci. Modern caz tınılarıyla dikkat çekiyor.',
+    description: {
+      tr: 'Rap ve besteci. Modern caz tınılarıyla dikkat çekiyor.',
+      en: 'Rapper and composer. Known for modern jazz tones.'
+    },
     spotifyUrl: 'https://open.spotify.com/artist/55dxJQtMgnMst1oFt98djw',
     youtubeUrl: 'https://www.youtube.com/@Seixxq',
   },
