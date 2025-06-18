@@ -52,6 +52,10 @@ const artists = [
     description: 'Caz vokali ve besteci. Modern caz tınılarıyla dikkat çekiyor.',
     spotifyUrl: 'https://open.spotify.com/artist/55dxJQtMgnMst1oFt98djw',
   },
+
+
+
+  
   // Add more artists as needed
 ]
 
