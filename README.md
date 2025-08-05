@@ -20,7 +20,7 @@
 - Framer Motion
 - EmailJS
 
-## Kurulum
+## Kurulum ve Çalıştırma
 
 1. Projeyi klonlayın:
 ```bash
@@ -31,6 +31,7 @@ git clone https://github.com/se3cdet/7edi-music.git
 ```bash
 cd 7edi-music
 npm install
+# Postinstall otomatik olarak Prisma client oluşturur ve veritabanı migrate eder
 ```
 
 3. Geliştirme sunucusunu başlatın:
@@ -45,6 +46,10 @@ npm run dev
 Projeyi çalıştırmak için aşağıdaki çevre değişkenlerini `.env.local` dosyasında tanımlamanız gerekir:
 
 ```env
+DATABASE_URL=postgres://user:password@localhost:5432/oraman_db
+NEXTAUTH_SECRET=your_nextauth_secret
+EMAIL_SERVER_USER=smtp_user
+EMAIL_SERVER_PASSWORD=smtp_pass
 NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
 NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
 NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key

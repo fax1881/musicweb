@@ -171,8 +171,8 @@ export default function Career() {
         en: 'Contact'
       },
       description: {
-        tr: 'Kariyer fırsatlarımız hakkında daha fazla bilgi almak için bizimle iletişime geçebilirsiniz. E-posta: kariyer@sirketim.com',
-        en: 'For more information about our career opportunities, please contact us. Email: careers@company.com'
+        tr: 'Kariyer fırsatlarımız hakkında daha fazla bilgi almak için bizimle iletişime geçebilirsiniz. E-posta: contact@oramanrecords.com',
+        en: 'For more information about our career opportunities, please contact us. Email: contact@oramanrecords.com'
       }
     }
   };

@@ -42,7 +42,7 @@ export default function ContactPage() {
           from_email: formData.email,
           subject: formData.subject,
           message: formData.message,
-          to_name: '7edi Music',
+          to_name: 'Oraman Records',
         },
         'jYx-IxkYg1-Mqlzb2'
       )
@@ -337,8 +337,8 @@ export default function ContactPage() {
                     <FaEnvelope className="text-primary text-xl mt-1" />
                     <div>
                       <h3 className="text-white font-medium mb-1">{content.info.email[language]}</h3>
-                      <a href="mailto:contact@7edimusic.com" className="text-white/80 hover:text-primary transition-colors">
-                        contact@7edimusic.com
+                      <a href="mailto:contact@oramanrecords.com" className="text-white/80 hover:text-primary transition-colors">
+                        contact@oramanrecords.com
                       </a>
                     </div>
                   </div>

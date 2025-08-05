@@ -13,11 +13,11 @@ module.exports = {
       },
       colors: {
         primary: {
-          DEFAULT: '#FFD700', // Ana sarı
-          dark: '#FFC000',    // Koyu sarı
-          light: '#FFE44D',   // Açık sarı
-          hover: '#FFE44D',   // Hover durumu için sarı
-          muted: '#FFD70033', // Yarı saydam sarı
+          DEFAULT: '#FF0000', // Ana sarı
+          dark: '#CC0000',    // Koyu sarı
+          light: '#FF4D4D',   // Açık sarı
+          hover: '#FF4D4D',   // Hover durumu için sarı
+          muted: '#FF000033', // Yarı saydam sarı
         },
         secondary: {
           DEFAULT: '#000000', // Ana siyah
@@ -26,7 +26,7 @@ module.exports = {
           muted: '#00000099', // Yarı saydam siyah
         },
         accent: {
-          yellow: '#FFD700',
+          yellow: '#FF0000',
           black: '#000000',
         },
       },
@@ -35,9 +35,9 @@ module.exports = {
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       boxShadow: {
-        'yellow': '0 0 15px rgba(255, 215, 0, 0.3)',
+        'yellow': '0 0 15px rgba(255, 0, 0, 0.3)',
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
 } 

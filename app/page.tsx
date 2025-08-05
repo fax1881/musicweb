@@ -9,6 +9,7 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
+import { FaYoutube } from 'react-icons/fa'
 
 // Geçici veri
 const artists = [
@@ -54,7 +55,7 @@ const artists = [
       en: 'R&B and soul artist known for emotional vocals.'
     },
     image: '/images/fatmapolat.jpg',
-    spotifyUrl: 'https://open.spotify.com/artist/3WrFJ7ztbogyGnTHbHJFl2',
+    spotifyUrl: 'https://open.spotify.com/artist/7J15rRmjDXGyv3ip6CdmeM',
   },
   {
     id: 5,
@@ -76,7 +77,19 @@ const artists = [
       en: 'Jazz vocalist and composer. Notable for modern jazz tones.'
     },
     image: '/images/atillakaya.jpg',
-    spotifyUrl: 'https://open.spotify.com/artist/5YGY8feqx7naU7z4HrwZM6',
+    spotifyUrl: 'https://open.spotify.com/artist/55dxJQtMgnMst1oFt98djw',
+  },
+  {
+    id: 7,
+    name: 'Sei',
+    genre: { tr: 'Rap', en: 'Rap' },
+    image: '/images/sei.jpg',
+    description: {
+      tr: 'Rap ve besteci. Modern caz tınılarıyla dikkat çekiyor.',
+      en: 'Rapper and composer. Known for modern jazz tones.'
+    },
+    spotifyUrl: 'https://open.spotify.com/artist/55dxJQtMgnMst1oFt98djw',
+    youtubeUrl: 'https://www.youtube.com/@Seixxq',
   },
 ]
 
@@ -103,8 +116,8 @@ const releases = [
     releaseDate: '2024',
     genre: { tr: 'Arabesk', en: 'Arabesk' },
     description: {
-      tr: 'Endüstriyel ve arabest tarzında yeni albüm.',
-      en: 'New album in industrial and arabest style.'
+      tr: 'Endüstriyel ve arabesk tarzında yeni albüm.',
+      en: 'New album in industrial and arabesk style.'
     }
   },
 
@@ -121,6 +134,7 @@ const releases = [
       en: 'New album in industrial and dark techno style.'
     }
   },
+  
 ]
 
 const content = {
@@ -278,6 +292,18 @@ export default function Home() {
                         <span className="font-semibold">{content.artists.spotify[language]}</span>
                       </motion.div>
                     </a>
+                    {artist.youtubeUrl && (
+                      <a
+                        href={artist.youtubeUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 bg-gradient-to-r from-red-600 to-red-800 text-white px-4 py-2 rounded-full ml-2 shadow-md hover:scale-105 hover:shadow-lg hover:from-red-700 hover:to-red-900 transition-all duration-200"
+                        style={{ fontWeight: 600 }}
+                      >
+                        <FaYoutube className="text-xl" />
+                        YouTube
+                      </a>
+                    )}
                   </div>
                 </motion.div>
               </SwiperSlide>

@@ -78,7 +78,7 @@ const Footer = () => {
                 className="relative w-40 h-12"
               >
                 <div className="w-full h-full bg-primary text-secondary flex items-center justify-center font-display font-bold text-2xl rounded-lg">
-                  7EDİ MUSİC
+                  ORAMAN RECORDS
                 </div>
               </motion.div>
             </Link>
@@ -153,7 +153,7 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-primary/20">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} 7EDİ Music Entertainment. {language === 'tr' ? 'Tüm hakları saklıdır.' : 'All rights reserved.'}
+              © {new Date().getFullYear()} Oraman Records. {language === 'tr' ? 'Tüm hakları saklıdır.' : 'All rights reserved.'}
             </p>
             <div className="flex space-x-6">
               <Link

@@ -1,9 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, Montserrat } from 'next/font/google'
 import './globals.css'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
-import { LanguageProvider } from '@/contexts/LanguageContext'
+import SiteChrome from '@/components/SiteChrome'
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -16,10 +14,10 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: '7EDİ Music Entertainment',
+  title: 'Oraman Records',
   description: 'Yeni nesil müzik platformu',
   icons: {
-    icon: '/favicon.ico',
+    icon: '/images/logo.svg',
   },
 }
 
@@ -31,13 +29,7 @@ export default function RootLayout({
   return (
     <html lang="tr" className={`${inter.variable} ${montserrat.variable}`}>
       <body className={`${inter.className} min-h-screen flex flex-col bg-secondary text-white antialiased`}>
-        <LanguageProvider>
-          <Navbar />
-          <main className="flex-grow">
-            {children}
-          </main>
-          <Footer />
-        </LanguageProvider>
+        <SiteChrome>{children}</SiteChrome>
       </body>
     </html>
   )
