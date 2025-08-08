@@ -11,7 +11,7 @@
     "start": "next start",
     "lint": "next lint",
     "migrate": "prisma migrate deploy",
-    "postinstall": "prisma generate && prisma migrate deploy"
+    "postinstall": "prisma generate && node scripts/conditionally-migrate.cjs"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
